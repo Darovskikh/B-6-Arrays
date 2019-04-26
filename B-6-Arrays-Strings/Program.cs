@@ -231,10 +231,8 @@ namespace Base.Lesson_6
             string[] p = poem.Split(';');
             foreach (string str in p)
             {
-                string st = str.Replace('О', 'А');
-                string s = st.Replace("Л", "ЛЬ");
-                string s1 = s.Replace("ТЬ", "Т");
-                Console.WriteLine(s1);
+                string st = str.Replace('О', 'А').Replace("Л", "ЛЬ").Replace("ТЬ", "Т");              
+                Console.WriteLine(st);
             }
 
         }
